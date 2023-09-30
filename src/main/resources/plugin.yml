@@ -1,0 +1,27 @@
+name: FirstPLUGin
+version: '${project.version}'
+main: me.davvolol.firstplugin.FirstPLUGin
+api-version: 1.19
+commands:
+  PMAC:
+    description: Simple command to enable PMAC
+    permission: pvpmania.pmac
+    usage: /<command>
+  Ffakit:
+    description: Kit that opens an inventory with kits
+    usage: /<command>
+  Enchanter:
+    description: Enchanter gui
+    permission: pvpmania.enchanter
+    usage: /<command> <player>
+  Blacksmith:
+    description: Bazaar gui
+    permission: pvpmania.blacksmith
+    usage: /<command> <player>
+  Bazaar:
+    description: Bazaar gui
+    permission: pvpmania.bazaar
+    usage: /<command> <player>
+  Customnick:
+    description: Custom Nickname
+    usage: /<command>
