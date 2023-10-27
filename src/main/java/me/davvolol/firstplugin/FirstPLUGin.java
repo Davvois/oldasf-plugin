@@ -30,12 +30,11 @@ public final class FirstPLUGin extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        System.out.println("The Plugin has started");
+        System.out.println("[PVPManiaPlugin] The Plugin has started");
         getServer().getPluginManager().registerEvents(this, this);
         RegisteredServiceProvider<LuckPerms> provider = Bukkit.getServicesManager().getRegistration(LuckPerms.class);
         if (provider != null) {
             LuckPerms api = provider.getProvider();
-
         }
 
         this.getCommand("pmac").setExecutor(new PMAC());
@@ -48,7 +47,7 @@ public final class FirstPLUGin extends JavaPlugin implements Listener {
     @Override
     public void onDisable() {
         // Plugin shutdown logic
-        System.out.println("The Plugin has stopped");
+        System.out.println("[PVPManiaPlugin] The Plugin has stopped");
     }
 
     @EventHandler
