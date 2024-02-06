@@ -232,6 +232,10 @@ public final class FirstPLUGin extends JavaPlugin implements Listener {
                         // Il tempo che sta passando è uguale al tempo attuale in millisecondi meno il countdown stabilito precedentemente
                         long timeElapsed = System.currentTimeMillis() - cooldown.get(player.getUniqueId());
                         //Se il tempo passato è maggiore o uguale a 20 secondi allora il comando può essere eseguito nuovamente
+                        //Sbocco totale, non so come cazzo faccio a ridurre tutte ste cazzo di righe e ottimizzare sto cazzo di codice
+                        //Sboltinaggio
+                        // :)
+                        
                         if (timeElapsed >= 20000) {
                             if (event.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§e§lNormal")) {
                                 ItemStack helmet = new ItemStack(Material.IRON_HELMET);
