@@ -2,6 +2,7 @@ name: FirstPLUGin
 version: '${project.version}'
 main: me.davvolol.firstplugin.FirstPLUGin
 api-version: 1.19
+depend: [WorldGuard]
 commands:
   PMAC:
     description: Simple command to enable PMAC
@@ -15,13 +16,16 @@ commands:
     permission: pvpmania.enchanter
     usage: /<command> <player>
   Blacksmith:
-    description: Bazaar gui
+    description: Blacksmith gui
     permission: pvpmania.blacksmith
     usage: /<command> <player>
   Bazaar:
     description: Bazaar gui
     permission: pvpmania.bazaar
     usage: /<command> <player>
-  Customnick:
-    description: Custom Nickname
+  Stats:
+    description: Stats gui
+    usage: /<command> clear <player>
+  Discord:
+    description: Discord command
     usage: /<command>
