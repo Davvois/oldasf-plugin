@@ -115,7 +115,7 @@ public class Blacksmith implements CommandExecutor, Listener {
                 player.openInventory(inventory1);
             }
             else {
-                player.sendMessage(ChatColor.RED + " " + ChatColor.BOLD + "Sorry! " + ChatColor.WHITE + "You cant perform this command.");
+                player.sendMessage("§b§l[!]§fSorry you cant perform this command §b§l[!]");
             }
         }
         return true;
