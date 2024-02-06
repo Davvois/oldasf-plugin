@@ -19,9 +19,6 @@ public class Enchanter implements CommandExecutor, Listener {
         if(args.length > 0) {
             Player player = Bukkit.getPlayer(args[0]);
 
-            //Creare l'inventario in cui null è l'owner (cioe tutti) il size dei slot e il nome
-
-
             //Creare un itemstack
             ItemStack panel = new ItemStack(Material.GRAY_STAINED_GLASS_PANE);
 
@@ -117,7 +114,7 @@ public class Enchanter implements CommandExecutor, Listener {
                 player.openInventory(inventory2);
             }
             else {
-                player.sendMessage(ChatColor.RED + " " + ChatColor.BOLD + "Sorry! " + ChatColor.WHITE + "You cant perform this command.");
+                player.sendMessage("§b§l[!]§fSorry you cant perform this command §b§l[!]");
             }
         }
         return true;
